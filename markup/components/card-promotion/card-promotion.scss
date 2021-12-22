@@ -1,0 +1,63 @@
+.card-promotion {
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 28px;
+        color: #282828;
+        margin-bottom: 16px;
+
+        @media (max-width: 1439px) {
+            line-height: 22px;
+            font-size: 15px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+
+    &__subtitle {
+        color: #282828;
+        margin-bottom: 20px;
+
+        @media (max-width: 1439px) {
+            
+        }
+        
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        
+    }
+
+    &__image {
+        overflow: hidden;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        @media (max-width: 1439px) {
+            max-height: 168px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 24px;
+            max-height: 148px;
+            min-height: 148px;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+    include ../components/card/card.pug
+    include ../components/card-promotion/card-promotion.pug
+
+    head
+        +head(head.defaults)
+    body.page
+        |%=symbols=%
+
+        section.section.section__offers
+            .container
+                .offers
+                    .row.offers__head
+                        .col-md-10.col-12
+                            h1.title.offers__title Предложения и акции
+                        .col-2
+                            .slider-arrows 
+                    .row.offers__slider
+                        .col-12
+                            .slick
+                                .offers__card
+                                    +card('Карта привилегий «Новый город»', 'static/img/content/photo.jpg')    
+                                .offers__card
+                                    +card('Бесплатное такси в офис продаж Нового города', 'static/img/content/photo3.jpg')
+                                .offers__card
+                                    +card('Квартиры с отделкой от застройщика', 'static/img/content/photo2.jpg')
+                                .offers__card
+                                    +card('Карта привилегий «Новый город»', 'static/img/content/photo.jpg')    
+                                .offers__card
+                                    +card('Бесплатное такси в офис продаж Нового города', 'static/img/content/photo3.jpg')
+                                .offers__card
+                                    +card('Квартиры с отделкой от застройщика', 'static/img/content/photo2.jpg')   
+                    .row
+                        .col-12
+                            .slider-arrows-mobile
+                    .row
+                        .col-12.align-center
+                            .offers__link
+                                a.link.link--yellow(href="#!") Узнать больше
+                    .row
+                        .col-12
+                            .offers__card-promotion
+                                +card-promotion('Просторные квартиры с гардеробными →', 'Жилой комплекс «Новый город» расположен в одном из самых динамично развивающихся районов Обнинска - Заовражье. Несмотря на близость к центру (5 минут езды до ТРК «Триумф Плаза»), место здесь тихое и спокойное.', 'Архитектура и дизайн комплекса — яркий пример удачного сочетания классических традиций строительства с современными материалами и технологиями. Территория микрорайона разделена на ряд благоустроенных зон с детскими игровыми площадками, спортивными тренажерами и прогулочными дорожками', 'static/img/content/photo4.jpg' )
+                    
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

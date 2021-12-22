@@ -1,0 +1,50 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+.title {
+   font-size: 32px;
+   line-height: 44px;
+   font-style: normal;
+   font-weight: 700;
+   font-family: 'Manrope', Arial, sans-serif;
+
+   @media (max-width: 1440px) {
+       font-size: 24px;
+       line-height: 32px;
+    }
+}
+
+.subtitle {
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: 'Manrope', Arial, sans-serif;
+
+    @media (max-width: 1439px) {
+        font-size: 12px;
+        line-height: 16px
+    }
+}
+
+h1,h2,p, {
+    margin: 0;
+    padding: 0;
+}
+
+
+.offers__slider .slick {
+    margin: 0 -10px;
+}
+
+
+.offers__slider .slick-slide {
+    margin: 0 10px;
+}
+
+.container {
+    box-sizing: border-box;
+}
+

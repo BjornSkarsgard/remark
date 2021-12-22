@@ -1,0 +1,11 @@
+mixin card-promotion(title, subtitle, subtitle2, image)
+    .card-promotion
+        .row
+            .col-md-6.col-12
+                .card-promotion__image
+                    img(src=image, alt="Фотография акции")
+            .col-md-6.col-12
+                .card-promotion__text-block
+                    h2.title.card-promotion__title= title
+                    p.subtitle.card-promotion__subtitle= subtitle
+                    p.subtitle.card-promotion__subtitle= subtitle2
